@@ -10,7 +10,7 @@ function playGame() {
         name: "guess"
     }]).then(function (answers) {
         // console.log(answers.guess);
-        wordsArray.check(answers.guess);
+        wordsArray.check(answers.guess.toUpperCase());
     });
 }
 

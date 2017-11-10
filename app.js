@@ -2,7 +2,7 @@ var inquire = require("inquirer");
 var Word = require("./word.js");
 var playGame = require("./game.js");
 
-console.log("\nWelcome to ____ Hangman!\n");
+console.log("\nWelcome to Greatest Mountains Hangman!\n");
 
 // Prompt to ask user if they want to play 
 

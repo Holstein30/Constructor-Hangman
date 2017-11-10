@@ -1,5 +1,8 @@
 // Array of potential answers
 
-var answers = ["test", "test2", "test3", "test4", "test5"];
+var answers = ["KILIMANJARO", "EVEREST", "K2", "DENALI", "MACHAPUCHARE", "FUJI",
+    "MATTERHORN", "BLANC", "RAINIER", "OLYMPUS", "VESUVIUS", "WHITNEY", "KIRKJUFELL",
+    "AORAKI", "ELBRUS", "LICANCABUR", "MERAPI"
+];
 
 module.exports = answers;
