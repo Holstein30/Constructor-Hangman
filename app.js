@@ -1,24 +1,10 @@
-// NPM packages
-
 var inquire = require("inquirer");
+var Word = require("./word.js");
+var playGame = require("./game.js");
 
-// Set answers array and variables
-var answers = ["test", "test2", "test3", "test4", "test5"];
-var guessesLeft = 10;
+console.log("\nWelcome to ____ Hangman!\n");
 
-function Word(answer) {
-    this.answer = answer;
-}
-
-var letter = function (letter) {
-    this.letter = letter;
-    this.show = false;
-    this.showLetter = function () {
-        return !(this.show) ? "_" : this.letter;
-    };
-};
-
-console.log("Welcome to ____ Hangman!");
+// Prompt to ask user if they want to play 
 
 inquire.prompt([{
     type: "confirm",
@@ -26,26 +12,12 @@ inquire.prompt([{
     name: "play"
 }]).then(function (answers) {
     if (answers.play) {
+        console.log("\nYou have 10 guesses! Good Luck!\n");
+        wordsArray = new Word();
+        // console.log(wordsArray);
+        wordsArray.passLetters();
         playGame();
     } else {
         console.log("Come back when you're ready");
     }
 });
-
-function playGame() {
-    var randomNum = Math.floor(Math.random() * answers.length);
-    var currentWord = new Word(answers[randomNum]);
-    console.log(currentWord);
-}
-
-function isLetter() {
-
-}
-
-function gameOver() {
-
-}
-
-function restart() {
-
-}
