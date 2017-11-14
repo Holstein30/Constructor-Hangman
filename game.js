@@ -15,5 +15,3 @@ function playGame() {
 }
 
 module.exports = playGame;
-
-// Add difficulty tiers

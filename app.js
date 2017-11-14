@@ -21,3 +21,9 @@ inquire.prompt([{
         console.log("Come back when you're ready");
     }
 });
+
+// ----- Known Bugs -----
+// 
+
+// ----- Things to Add -----
+// Difficulty tiers
